@@ -1,7 +1,7 @@
 # Homebrew cask for Kagisecure.
 cask "kagisecure" do
-  version "0.1.3"
-  sha256 "6c7eb448051052da2ac2f38a2a12b103d90e446e443618b6c0203cca15530fbc"
+  version "0.1.4"
+  sha256 "88d31ef970fa8fbaf418be4f34a26edd6f7068b914bae28773444cb0f49136de"
 
   # A stable filename with no version in it, so `releases/latest/download/Kagisecure.dmg` is a
   # permanent "always latest" link. `#{version}` appears in the tag, which is where it belongs.
