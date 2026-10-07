@@ -1,7 +1,7 @@
 # Homebrew cask for Kagisecure.
 cask "kagisecure" do
-  version "0.1.5"
-  sha256 "0d1dc5c075bdbbe2a7720c9899597a8924662d035e3c5275b42c707d6404bf1b"
+  version "0.2.0"
+  sha256 "3298f1928e27483ae5de4cbba107c2f2ec0909093d04939b3d23fcf0e97b8d01"
 
   # A stable filename with no version in it, so `releases/latest/download/Kagisecure.dmg` is a
   # permanent "always latest" link. `#{version}` appears in the tag, which is where it belongs.
@@ -15,6 +15,9 @@ cask "kagisecure" do
     strategy :github_latest
   end
 
+  # The app updates itself with Sparkle, so `brew upgrade` leaves it alone unless
+  # `--greedy` is passed.
+  auto_updates true
   depends_on macos: :sequoia
 
   app "Kagisecure.app"
